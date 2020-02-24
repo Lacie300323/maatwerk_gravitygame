@@ -57,4 +57,13 @@ public class Player : MonoBehaviour
     {
         isGrounded = true; // As long as the character is on top of the collision box, the character will remain grounded
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.gameObject.CompareTag("Coin"))
+        {
+            Destroy(other.gameObject);
+            Debug.Log("Coin Collected!");
+        }
+    }
 }
