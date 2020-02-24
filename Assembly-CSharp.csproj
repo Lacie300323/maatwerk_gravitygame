@@ -67,6 +67,8 @@
     <Compile Include="Assets\Scripts\OrbitMotion.cs" />
     <Compile Include="Assets\Scripts\Planet.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
+    <Compile Include="Assets\Scripts\Portal.cs" />
+    <Compile Include="Assets\Scripts\PortalControl.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/NovaYin/Documents/Gitkraken/Game/maatwerk_gravitygame/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
