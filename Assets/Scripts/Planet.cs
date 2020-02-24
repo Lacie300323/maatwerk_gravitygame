@@ -21,9 +21,9 @@ public class Planet : MonoBehaviour
 
     private void Start()
     {
-        
+
         totRadius = radiusComp.radius * radiusComp.gameObject.transform.lossyScale.x; // Because im using a collider within the parent object, the scale is different on the chil object
-    }   
+    }
 
     private void FixedUpdate()
     {
@@ -40,12 +40,19 @@ public class Planet : MonoBehaviour
             Vector2 forceDirection = ((Vector2)transform.position - rgbody.position).normalized; //Calculates in which direction force needs to be applied
 
             float distance = 1 - Vector2.Distance(transform.position, rgbody.position) / totRadius; //Calculate in precentages distance in the collider towards the center of the planet
-           // Debug.LogFormat("{0} dist {1} radius", Vector2.Distance(transform.position, rgbody.position), totRadius);
+                                                                                                    // Debug.LogFormat("{0} dist {1} radius", Vector2.Distance(transform.position, rgbody.position), totRadius);
 
             float gForceLerp = Mathf.Lerp(minGForce, maxGForce, distance);
 
             Vector2 gravityForce = forceDirection * gForceLerp;
             //Debug.Log(gravityForce);
+
+            Player playerScript = rgbody.gameObject.GetComponent<Player>();
+
+            if(playerScript != null && playerScript.inverseGravity)
+            {
+                gravityForce *= -1;
+            }
 
             // Add the force of gravity to the rigidbody of the object.
             //ToDo: Add minus to a button / keyinput to change attraction to repulsion
@@ -78,9 +85,16 @@ public class Planet : MonoBehaviour
         Rigidbody2D previousByGravity = collision.GetComponent<Rigidbody2D>(); //Get the rigidbody of the object exiting the Collider of the planet.
 
         if (previousByGravity && rgList.Contains(previousByGravity))
-        {
+        { 
             rgList.Remove(previousByGravity); //Remove the rigidbody from the list of that particular plannet
             Debug.Log(previousByGravity.gameObject.name + " exited the gravity of " + this.gameObject.name); //Log for check
+
+            Player playerScript = previousByGravity.gameObject.GetComponent<Player>();
+
+            if (playerScript != null) //Resetting inverse gravity
+            {
+                playerScript.inverseGravity = false;
+            }
         }
     }
 }

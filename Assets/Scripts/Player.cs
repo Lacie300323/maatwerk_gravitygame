@@ -4,17 +4,14 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public bool inverseGravity = false; // Checking if the gravity is inversed
+
     [SerializeField] private Rigidbody2D rigidb; //Rigidbody of the player
     [SerializeField] private float speed = 1f; //Movement speed of the character
     [SerializeField] private float jumpheight = 3f; //Jumpheight of the character
-
+    
     private bool isGrounded = false; // Checks if the character is touching ground or not. Default is false.
     private Vector2 moveInput = Vector2.zero; // Writes the Vector 2 (0,0)
-
-    private void Start()
-    {
-        //rigidb.velocity = new Vector2(2, 1);
-    }
 
     private void FixedUpdate()
     {
@@ -31,7 +28,7 @@ public class Player : MonoBehaviour
         rigidb.AddForce(movementVert, ForceMode2D.Impulse);
         isGrounded = false; //since the player is jumping, it's no longer grounded.
 
-        moveInput = Vector2.zero; ;
+        moveInput = Vector2.zero; 
     }
 
     void Update()
@@ -41,6 +38,12 @@ public class Player : MonoBehaviour
         if(isGrounded && Input.GetKeyDown(KeyCode.Space)) //If the player is grounded and theres in input key of SPACE 
         {
             moveInput.y = 1;
+        }
+
+        if (Input.GetKey(KeyCode.G))
+        {
+            inverseGravity = !inverseGravity; // Sets false --> true and true ---> false
+            Debug.Log("Change gravity");
         }
     }
 
