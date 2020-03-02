@@ -40,7 +40,7 @@ public class Player : MonoBehaviour
             moveInput.y = 1;
         }
 
-        if (Input.GetKey(KeyCode.G))
+        if (Input.GetKeyDown(KeyCode.G))
         {
             inverseGravity = !inverseGravity; // Sets false --> true and true ---> false
             Debug.Log("Change gravity");
