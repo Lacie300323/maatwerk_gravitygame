@@ -7,13 +7,16 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     private bool gameOver = false; ///Bool to check if the game has ended
-
+    
     public float restartDelay = 1f; //The amount of time it takes to restart the game
     public GameObject levelCompleteUI;
 
+
     public void CompleteLevel()
     {
+
         levelCompleteUI.SetActive(true);
+        GetComponent<StarHandler>().starsAcquired();
     }
 
     public void EndGame()
