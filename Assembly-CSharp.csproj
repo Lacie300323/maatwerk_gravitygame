@@ -76,6 +76,7 @@
     <Compile Include="Assets\Scripts\Orbiting scripts\Ellipse.cs" />
     <Compile Include="Assets\Scripts\Orbiting scripts\OrbitMeteor.cs" />
     <Compile Include="Assets\Scripts\Orbiting scripts\OrbitMotion.cs" />
+    <Compile Include="Assets\Scripts\Pause.cs" />
     <Compile Include="Assets\Scripts\Planet.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\ScoreManager.cs" />
