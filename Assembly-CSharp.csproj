@@ -63,9 +63,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Ally.cs" />
+    <Compile Include="Assets\Scripts\Boundaries.cs" />
     <Compile Include="Assets\Scripts\CheckpointSystem\Checkpoint.cs" />
     <Compile Include="Assets\Scripts\CheckpointSystem\CheckpointManager.cs" />
     <Compile Include="Assets\Scripts\Coin.cs" />
+    <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\HealthSystem\Health.cs" />
     <Compile Include="Assets\Scripts\HealthSystem\HealthDisplay.cs" />
     <Compile Include="Assets\Scripts\HealthSystem\UnityIntEvent.cs" />
@@ -74,6 +77,7 @@
     <Compile Include="Assets\Scripts\Orbiting scripts\OrbitMotion.cs" />
     <Compile Include="Assets\Scripts\Planet.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
+    <Compile Include="Assets\Scripts\Projectile.cs" />
     <Compile Include="Assets\Scripts\ScoreManager.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
