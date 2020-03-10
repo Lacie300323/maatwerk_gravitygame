@@ -68,8 +68,11 @@
     <Compile Include="Assets\Scripts\CheckpointSystem\Checkpoint.cs" />
     <Compile Include="Assets\Scripts\CheckpointSystem\CheckpointManager.cs" />
     <Compile Include="Assets\Scripts\Coin.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\Scripts\Enemy.cs" />
+=======
     <Compile Include="Assets\Scripts\GameManager.cs" />
+>>>>>>> Win_level
     <Compile Include="Assets\Scripts\HealthSystem\Health.cs" />
     <Compile Include="Assets\Scripts\HealthSystem\HealthDisplay.cs" />
     <Compile Include="Assets\Scripts\HealthSystem\UnityIntEvent.cs" />
