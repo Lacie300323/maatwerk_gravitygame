@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":6.237578392028809,"y":1.0115927457809449,"z":-14.642680168151856},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":15.292572021484375,"orthographic":true}
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":-0.2997363209724426,"y":0.8647130727767944,"z":105.8572998046875},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":10.4903564453125,"orthographic":true}
+>>>>>>> Win_level

@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class HealthDisplay : MonoBehaviour
 {
-    [SerializeField] private Image[] allHearts;
-    [SerializeField] private Sprite fullHeart;
-    [SerializeField] private Sprite emptyHeart;
+    [SerializeField] private Image[] allHearts; //Image list of all heart sprites
+    [SerializeField] private Sprite fullHeart; //Image of the fullheart sprite
+    [SerializeField] private Sprite emptyHeart; //Image of the emptyheart sprite
 
     public void UpdateDisplay(int remainingHearts)
     {
