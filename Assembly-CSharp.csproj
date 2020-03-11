@@ -68,13 +68,21 @@
     <Compile Include="Assets\Scripts\CheckpointSystem\Checkpoint.cs" />
     <Compile Include="Assets\Scripts\CheckpointSystem\CheckpointManager.cs" />
     <Compile Include="Assets\Scripts\Coin.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\Scripts\Enemy.cs" />
+=======
+    <Compile Include="Assets\Scripts\GameManager.cs" />
+>>>>>>> Win_level
     <Compile Include="Assets\Scripts\HealthSystem\Health.cs" />
     <Compile Include="Assets\Scripts\HealthSystem\HealthDisplay.cs" />
     <Compile Include="Assets\Scripts\HealthSystem\UnityIntEvent.cs" />
+    <Compile Include="Assets\Scripts\LevelComplete System\EndLevel.cs" />
+    <Compile Include="Assets\Scripts\LevelComplete System\LevelComplete.cs" />
+    <Compile Include="Assets\Scripts\LevelComplete System\StarHandler.cs" />
     <Compile Include="Assets\Scripts\Orbiting scripts\Ellipse.cs" />
     <Compile Include="Assets\Scripts\Orbiting scripts\OrbitMeteor.cs" />
     <Compile Include="Assets\Scripts\Orbiting scripts\OrbitMotion.cs" />
+    <Compile Include="Assets\Scripts\Pause.cs" />
     <Compile Include="Assets\Scripts\Planet.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\Projectile.cs" />
